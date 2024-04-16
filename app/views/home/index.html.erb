@@ -1,0 +1,71 @@
+<section id="cover">
+    <header id="hero-section">
+        <div id="hero-section-text">
+            <p class="hola no-margin">hola, soy</p>
+            <h2 class="nombre no-margin">María José</h2>
+            <h2 class="nombre no-margin">Santa Cruz</h2>
+            <p class="profesion">ilustradora/pintora</p>
+
+            <div id="redes-sociales">
+                <%= link_to 'https://www.tiktok.com/@mariaj_santacruzc_art', target: '_blank' do %>
+                    <i>
+                        <%= image_tag('tiktok.png', alt: 'icono tiktok', style:'height:32px;') %>
+                    </i>
+                <%end%>
+                <%= link_to 'https://www.instagram.com/mariaj_santacruzc_art', target: '_blank' do %>
+                    <i>
+                        <%= image_tag('instagram.png', alt: 'icono instagram', style:'height:32px;') %>
+                    </i>
+                <%end%>
+                <%= link_to 'https://www.pinterest.com/mariaj_santacruzc/', target: '_blank' do %>
+                    <i>
+                        <%= image_tag('pinterest.png', alt: 'icono pinterest', style:'height:32px;') %>
+                    </i>
+                <%end%>
+            </div>
+        </div>
+        <div id="hero-section-image">
+            <%= image_tag('portada.png', alt: 'María José Santa Cruz', style:'height:900px;') %>
+        </div>
+    </header>
+</section>
+<section id="biografia">
+    <div id="biografia-titulo">
+        <h3>Biografia</h3>
+    </div>
+    <div id="biografia-texto">
+        <p>Nacida en Guatemala, soy una artista empírica cuyo vínculo con el arte se forjó desde la infancia gracias a un entorno inspirador. Mi expresión artística, marcada por la autodidacta exploración, abarca desde la pintura y la danza contemporánea hasta el circo. En mis obras, busco plasmar el mundo interno y las emociones humanas de forma sensorial, desafiando al espectador a reflexionar sobre lo que observa. Inspirada por la naturaleza, mis creaciones suelen estar impregnadas de detalles que evocan su belleza. Mi técnica actual se centra en la pintura acrílica sobre madera, explorando texturas y colores intensos para dar vida a mis visiones artísticas</p>
+    </div>
+</section>
+<section id="categorias">
+    <h3 id="categoria-titulo">En qué te podemos ayudar?</h3>
+    <ul id="iconos">
+        <li>
+            <%= image_tag('lapiz.png', alt: 'María José Santa Cruz', style:'height:72px;') %>
+            <strong>Ilustraciones</strong>
+        </li>
+        <li>
+            <%= image_tag('rodillo.png', alt: 'María José Santa Cruz', style:'height:72px;') %>
+            <strong>Pinturas</strong>
+        </li>
+    </ul>
+</section>
+<section id="mi-trabajo-2">
+    <h3>Mi trabajo</h3>
+    
+    <div id="carrusel-2">
+        <%= image_tag('pintura1.jpeg', alt: 'María José Santa Cruz') %>
+        <%= image_tag('pintura2.jpeg', alt: 'María José Santa Cruz') %>
+        <%= image_tag('pintura3.jpeg', alt: 'María José Santa Cruz') %>
+        <%= image_tag('pintura4.jpeg', alt: 'María José Santa Cruz') %>
+    </div>
+</section>
+<section id="contactame">
+    <h3>Trabajemos juntos</h3>
+    <div>
+        <a href="https://api.whatsapp.com/send?phone=50231703410" target="_blank" class="whatsapp-button">
+            <%= image_tag('whatsapp.png', alt: 'logo whatsapp', style:'height:32px;') %>
+            Añademe a WhatsApp
+        </a>
+    </div>
+</section>
